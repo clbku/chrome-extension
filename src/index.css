@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'Huge';
+  src: local('Huge'), url(./assets/fonts/hug-me-tight-font/Hugmetight-j01R.otf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: local('Comfortaa'), url(./assets/fonts/comfortaa-font/Comfortaa-YJnL.ttf) format('tff');
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, 'Comfortaa', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e5e5e5;
+  height: auto !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

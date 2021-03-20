@@ -1,0 +1,22 @@
+{
+  "name": "Chrome Time Tracker",
+  "author": "Hoang Cong Ly",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "scripts": ["script/background-script.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script/content-script.js"]
+    }
+  ],
+  "permissions": ["storage", "webRequest", "webRequestBlocking"],
+  "content_security_policy": "script-src 'self' 'sha256-aksYSJrC1Oy0utyx9otllVdt/QIKIstScaaQhyqmdAg='; object-src 'self'"
+}
